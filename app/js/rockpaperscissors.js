@@ -72,7 +72,7 @@ function getWinner(playerMove,computerMove) {
         }
     }
     else {
-        console.log("Something has gone wrong, please refresh.")
+        console.log("Something has gone wrong, try checking your spelling.")
     }
     return winner;
 }
@@ -94,22 +94,22 @@ function playToFive() {
         if(winner == "tie") {
             round++;
             console.warn("Tie!")
-            console.log("player chose " + playerMove);
-            console.log("computer chose " + computerMove);
+            console.log("Player chose " + playerMove);
+            console.log("Computer chose " + computerMove);
         }
         if (winner == "player") {
             round++;
             playerWins++;
-            console.log("Round " + round + " Player chose " + playerMove + " and computer chose " + computerMove +". Everyone knows that " + playerMove + " beats " + computerMove);
-            console.log("player score: " + playerWins);
-            console.log("computer score: " + computerWins);
+            console.log("Round " + round + ": Player chose " + playerMove + " and Computer chose " + computerMove + ". " +  playerMove + " beats " + computerMove);
+            console.log("Player score: " + playerWins);
+            console.log("Computer score: " + computerWins);
         }
         if (winner == "computer") {
             round++;
             computerWins++;
-            console.log("Round " + round + " Computer chose " + computerMove + " and player chose " + playerMove +". Everyone knows that " + computerMove + " beats " + playerMove);
-            console.log("computer score: " + computerWins);
-            console.log("player score: " + playerWins);
+            console.log("Round " + round + " Computer chose " + computerMove + " and Player chose " + playerMove + ". " + computerMove + " beats " + playerMove);
+            console.log("Computer score: " + computerWins);
+            console.log("Player score: " + playerWins);
         }
     }
 
